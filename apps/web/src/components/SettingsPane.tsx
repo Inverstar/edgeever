@@ -23,6 +23,7 @@ import { EvernoteImportGuideCard } from "./settings/EvernoteImportGuideCard";
 import { FeedbackLink } from "./settings/FeedbackLink";
 import { McpConfigCard } from "./settings/McpConfigCard";
 import { PreferenceCard } from "./settings/PreferenceCard";
+import { SystemInfoCard } from "./settings/SystemInfoCard";
 import { PasswordCard } from "./settings/PasswordCard";
 import { SessionCard } from "./settings/SessionCard";
 import { UserManagementCard } from "./settings/UserManagementCard";
@@ -183,6 +184,7 @@ export const SettingsPane = ({
               shortcutSettings={shortcutSettings}
               onShortcutSettingsChange={onShortcutSettingsChange}
             />
+            <SystemInfoCard defaultExpanded={true} />
             <FeedbackLink className="hidden lg:flex" />
           </SettingsGroup>
         );
