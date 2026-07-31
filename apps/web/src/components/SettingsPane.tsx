@@ -29,6 +29,7 @@ import { FeedbackLink } from "./settings/FeedbackLink";
 import { ProductHuntLink } from "./settings/ProductHuntLink";
 import { McpConfigCard } from "./settings/McpConfigCard";
 import { PreferenceCard } from "./settings/PreferenceCard";
+import { SystemInfoCard } from "./settings/SystemInfoCard";
 import { PasswordCard } from "./settings/PasswordCard";
 import { UserManagementCard } from "./settings/UserManagementCard";
 import { ObjectStorageCard } from "./settings/ObjectStorageCard";
@@ -212,6 +213,7 @@ export const SettingsPane = ({
               editorContentAlignment={editorContentAlignment}
               onEditorContentAlignmentChange={onEditorContentAlignmentChange}
             />
+            <SystemInfoCard defaultExpanded={true} />
             <FeedbackLink className="hidden lg:flex" />
             <ProductHuntLink className="hidden lg:flex" />
           </SettingsGroup>
